@@ -1,0 +1,21 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DataMatrixIQ">
+  <defs>
+    <linearGradient id="g" x1="12" y1="10" x2="60" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#21C1B5"/>
+      <stop offset="0.55" stop-color="#4DA3FF"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="s" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <g filter="url(#s)">
+    <rect x="10" y="10" width="52" height="52" rx="16" fill="rgba(15,37,58,0.85)" stroke="rgba(255,255,255,0.14)"/>
+    <path d="M22 38C22 29.163 29.163 22 38 22H46C49.314 22 52 24.686 52 28V36C52 44.837 44.837 52 36 52H28C24.686 52 22 49.314 22 46V38Z" fill="url(#g)" opacity="0.92"/>
+    <path d="M26.5 33.2C27.9 30 31 27.8 34.6 27.8H44.2C46.3 27.8 48 29.5 48 31.6V41.4C48 45 45.8 48.1 42.6 49.5" stroke="rgba(255,255,255,0.55)" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="30.8" cy="41.2" r="2.6" fill="rgba(7,19,31,0.8)"/>
+    <circle cx="36" cy="36" r="2.6" fill="rgba(7,19,31,0.8)"/>
+    <circle cx="41.2" cy="30.8" r="2.6" fill="rgba(7,19,31,0.8)"/>
+  </g>
+</svg>
+

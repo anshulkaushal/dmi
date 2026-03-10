@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — DataMatrixIQ</title>
+  <meta name="description" content="Book a consultation with DataMatrixIQ. Tell us what you’re trying to achieve and we’ll suggest a practical path forward." />
+  <meta name="theme-color" content="#07131f" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/inject-config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo.svg" alt="DataMatrixIQ logo" />
+          <div class="name">
+            <strong data-brand-name>DataMatrixIQ</strong>
+            <span data-brand-tagline>AI‑First Delivery Powerhouse</span>
+          </div>
+        </a>
+        <button class="btn ghost menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="navlinks">Menu</button>
+        <div class="navlinks" id="navlinks" data-navlinks>
+          <a href="services.html">Services</a>
+          <a href="industries.html">Industries</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a class="btn primary" href="contact.html">Book a Call</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="pagehead">
+      <div class="container">
+        <div class="kicker"><span class="dot" aria-hidden="true"></span> Contact</div>
+        <h1>Book a free consultation.</h1>
+        <p>Share a bit about your goals and constraints. For now, the form opens your email client (true server-side emailing can be added later).</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid cols-2">
+          <div class="panel">
+            <div class="label">Send a message</div>
+
+            <form data-contact-form data-mailto="contact@datamatrixiq.com">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="field">
+                <label for="message">What are you trying to achieve?</label>
+                <textarea id="message" name="message" required placeholder="Example: Modernize pipelines to Snowflake, add governance, enable real-time reporting."></textarea>
+              </div>
+
+              <button class="btn primary" type="submit">Send</button>
+              <p class="hint" data-form-status style="margin:10px 0 0"></p>
+              <p class="hint" style="margin:10px 0 0">
+                Want a true hosted form later? We can switch this to Formspree / Getform / a small API endpoint when you’re ready.
+              </p>
+            </form>
+          </div>
+
+          <div class="panel">
+            <div class="label">Direct</div>
+            <h2 style="margin-top:10px">Email</h2>
+            <p class="sub" style="margin-top:0">
+              <a data-contact-email href="mailto:contact@datamatrixiq.com">contact@datamatrixiq.com</a>
+            </p>
+
+            <h2>Location</h2>
+            <p class="sub" style="margin-top:0"><span data-location-line>Wyndham City, Melbourne, Australia</span></p>
+
+            <div class="notice">
+              <strong style="font-family:Sora, system-ui, sans-serif">Domain not connected yet?</strong>
+              <div style="margin-top:8px" class="hint">
+                Once you point DNS to Hostinger, the site will go live with no code changes.
+              </div>
+            </div>
+
+            <div style="margin-top:14px" class="logo-strip" aria-label="Common topics">
+              <div class="logo">Platform assessment</div>
+              <div class="logo">Cost optimization</div>
+              <div class="logo">Modernization roadmap</div>
+              <div class="logo">Governance & trust</div>
+              <div class="logo">Observability</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footgrid">
+        <div>
+          <div class="brand" style="padding:0">
+            <img src="assets/img/logo.svg" alt="" />
+            <div class="name">
+              <strong data-brand-name>DataMatrixIQ</strong>
+              <span data-brand-tagline>AI‑First Delivery Powerhouse</span>
+            </div>
+          </div>
+          <p class="copyright" style="margin:10px 0 0">
+            Contact: <a data-contact-email href="mailto:contact@datamatrixiq.com">contact@datamatrixiq.com</a><br/>
+            <span data-location-line>Wyndham City, Melbourne, Australia</span>
+          </p>
+          <p class="copyright" style="margin:10px 0 0">© <span id="y"></span> <span data-brand-name>DataMatrixIQ</span>. All rights reserved.</p>
+        </div>
+
+        <div class="footlinks" aria-label="Footer links">
+          <a href="services.html">Services</a>
+          <a href="industries.html">Industries</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+    <script>document.getElementById("y").textContent = String(new Date().getFullYear());</script>
+  </footer>
+</body>
+</html>
+
