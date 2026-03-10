@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script src="assets/js/config.js"></script>
   <script src="assets/js/inject-config.js" defer></script>
@@ -84,106 +86,221 @@
       </div>
     </section>
 
-    <section class="section">
+    <!-- Services Section -->
+    <section id="services" class="section services-home">
       <div class="container">
-        <h2>Capabilities</h2>
-        <p class="sub">A focused, enterprise-ready set of services designed to improve speed, trust, and outcomes across your data and digital landscape.</p>
+        <div class="section-title text-center mb-5">
+          <h2>Empowering Enterprises Through Intelligent Solutions</h2>
+          <p class="mt-3">
+            At DataMatrixIQ, we help organizations unlock the power of AI, data, and cloud to accelerate innovation, optimize operations, and drive sustainable growth.
+          </p>
+        </div>
 
-        <div class="grid cols-3">
-          <div class="card">
-            <div class="pill"><span class="ico" aria-hidden="true"></span> Data & Analytics</div>
-            <h3>Modern data architecture</h3>
-            <p>Cloud-native foundations, modeling, governance, and pipelines to unify sources and accelerate insights.</p>
+        <div class="row justify-content-center">
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="bi bi-database-check"></i></div>
+              <h3>Data &amp; Analytics</h3>
+              <p>Build intelligent, scalable data ecosystems with modern ETL and governance.</p>
+            </div>
           </div>
-          <div class="card">
-            <div class="pill"><span class="ico" aria-hidden="true"></span> AI / ML</div>
-            <h3>Advanced AI analytics</h3>
-            <p>Predictive maintenance, forecasting, and decision intelligence — productionized with reliable MLOps patterns.</p>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="bi bi-robot"></i></div>
+              <h3>Artificial Intelligence (AI) / Machine Learning (ML)</h3>
+              <p>Infuse intelligence through predictive models, GenAI, and automation.</p>
+            </div>
           </div>
-          <div class="card">
-            <div class="pill"><span class="ico" aria-hidden="true"></span> Cloud Ops</div>
-            <h3>DevSecOps & observability</h3>
-            <p>Secure CI/CD, reliability engineering, and end-to-end visibility to keep platforms fast and resilient.</p>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="bi bi-app-indicator"></i></div>
+              <h3>Application Modernization</h3>
+              <p>Reimagine legacy systems for agility, cloud performance, and scale.</p>
+            </div>
           </div>
-          <div class="card">
-            <div class="pill"><span class="ico" aria-hidden="true"></span> Application modernization</div>
-            <h3>Modernize legacy applications</h3>
-            <p>Re-architect to cloud, improve performance, automate workflows, and simplify operations at scale.</p>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="fa-solid fa-gears"></i></div>
+              <h3>Business Apps</h3>
+              <p>Empower teams using low-code automation on the Microsoft ecosystem.</p>
+            </div>
           </div>
-          <div class="card">
-            <div class="pill"><span class="ico" aria-hidden="true"></span> Business apps</div>
-            <h3>Microsoft Teams + Power Platform</h3>
-            <p>Low-code automation and internal apps that improve execution without compromising security.</p>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="bi bi-bar-chart-fill"></i></div>
+              <h3>SalesForce</h3>
+              <p>Deliver real-time insights with connected dashboards and visualization tools.</p>
+            </div>
           </div>
-          <div class="card">
-            <div class="pill"><span class="ico" aria-hidden="true"></span> Salesforce</div>
-            <h3>Connected customer operations</h3>
-            <p>Integrate Salesforce with enterprise data for actionable insights and scalable multi-cloud delivery.</p>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="bi bi-recycle"></i></div>
+              <h3>Enterprise Integration</h3>
+              <p>Connect data, apps, and workflows for unified intelligence.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="bi bi-clouds-fill"></i></div>
+              <h3>Cloud OPS</h3>
+              <p>Secure, scalable, resilient cloud architectures for enterprise growth.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="fa-solid fa-bolt"></i></div>
+              <h3>Business Intelligence</h3>
+              <p>Fast-track transformation with pre-built frameworks and tooling.</p>
+            </div>
           </div>
         </div>
 
-        <div style="margin-top:16px">
-          <a class="btn" href="services.html">View all services</a>
+        <div class="text-center mt-5">
+          <a href="services.html" class="btn btn-primary">Explore All Services &#8594;</a>
+          <p class="mt-2 small text-muted">
+            From data to decisions - we deliver intelligence that drives measurable impact.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- Technology & Tools -->
+    <section id="technologies" class="features section features-cards">
+      <div class="container section-title">
+        <h2>Technology &amp; Tools</h2>
+        <p>We build scalable and future-ready data platforms using today’s most trusted tools:</p>
+      </div>
+
       <div class="container">
-        <h2>Technology & tools</h2>
-        <p class="sub">We work across proven platforms — selecting what best fits your security, scale, and governance requirements.</p>
-        <div class="logo-strip" aria-label="Technology list">
-          <div class="logo">AWS</div>
-          <div class="logo">Azure</div>
-          <div class="logo">GCP</div>
-          <div class="logo">Snowflake</div>
-          <div class="logo">Databricks</div>
-          <div class="logo">Airflow</div>
-          <div class="logo">dbt</div>
-          <div class="logo">Kafka</div>
-          <div class="logo">Spark</div>
-          <div class="logo">Power BI</div>
-          <div class="logo">Tableau</div>
-          <div class="logo">Collibra / Alation</div>
+        <div class="row gy-4">
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="feature-box blue">
+              <i class="bi bi-cloud"></i>
+              <h4>Cloud Platforms</h4>
+              <p>AWS, Azure, GCP</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="feature-box blue">
+              <i class="bi bi-house-gear-fill"></i>
+              <h4>Data Warehousing</h4>
+              <p>Snowflake, Redshift, BigQuery, Azure Synapse</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="feature-box blue">
+              <i class="bi bi-gear-wide-connected"></i>
+              <h4>Orchestration &amp; Pipelines</h4>
+              <p>Apache Airflow, dbt, Azure Data Factory, AWS Glue</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="feature-box blue">
+              <i class="bi bi-tv"></i>
+              <h4>Streaming &amp; Real-Time</h4>
+              <p>Apache Kafka, Spark Streaming, Flink</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="feature-box blue">
+              <i class="bi bi-eye"></i>
+              <h4>Visualization</h4>
+              <p>Looker, Tableau, Power BI</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="feature-box blue">
+              <i class="bi bi-database-fill-check"></i>
+              <h4>Data Governance</h4>
+              <p>Alation, Collibra, custom metadata catalogs</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- Industries -->
+    <section id="industries" class="section services-home">
       <div class="container">
-        <h2>Industries</h2>
-        <p class="sub">From energy to finance, retail to manufacturing — we help teams modernize, automate, and predict with confidence.</p>
-        <div class="grid cols-2">
-          <div class="card">
-            <h3>Power, Utilities & Energy</h3>
-            <p>AI-powered innovations for demand forecasting, grid insights, and operational efficiency.</p>
+        <div class="section-title text-center mb-5">
+          <h2>Transforming Industries with Data Intelligence</h2>
+          <p class="mt-3">
+            From energy to finance, retail to healthcare - DataMatrixIQ helps enterprises harness AI and data innovation to operate smarter, scale faster, and grow sustainably.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="fa-solid fa-bolt"></i></div>
+              <h3>Power &amp; Energy</h3>
+              <p>AI-powered grid efficiency and smart energy forecasting.</p>
+            </div>
           </div>
-          <div class="card">
-            <h3>Banking, Financial Services & Insurance</h3>
-            <p>Secure platforms, governance, and analytics that improve decisioning and reduce risk.</p>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="bi bi-bag"></i></div>
+              <h3>Retail &amp; CPG</h3>
+              <p>Personalized experiences and intelligent supply chains.</p>
+            </div>
           </div>
-          <div class="card">
-            <h3>Retail & CPG</h3>
-            <p>Supply chain intelligence, personalization, and performance reporting across channels.</p>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="bi bi-credit-card"></i></div>
+              <h3>Banking &amp; Finance</h3>
+              <p>Predictive insights and secure, data-driven operations.</p>
+            </div>
           </div>
-          <div class="card">
-            <h3>Manufacturing & Industrial</h3>
-            <p>Predictive maintenance and operational analytics that reduce downtime and increase throughput.</p>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="bi bi-buildings-fill"></i></div>
+              <h3>Manufacturing</h3>
+              <p>Smarter production through AI and IoT automation.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="bi bi-bandaid"></i></div>
+              <h3>Healthcare</h3>
+              <p>AI-led patient insights and improved clinical outcomes.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="bi bi-recycle"></i></div>
+              <h3>Sustainability</h3>
+              <p>Accelerating decarbonization through AI intelligence.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="service-card">
+              <div class="icon"><i class="bi bi-tools"></i></div>
+              <h3>Mining</h3>
+              <p>Data-driven mining for efficiency and sustainability.</p>
+            </div>
           </div>
         </div>
-        <div style="margin-top:16px">
-          <a class="btn" href="industries.html">Explore industries</a>
+
+        <div class="text-center mt-5">
+          <a href="industries.html" class="btn btn-primary">Explore All Industries &#8594;</a>
+          <p class="mt-2 small text-muted">
+            Wherever you operate - we bring intelligence that adapts, predicts, and transforms.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- Call To Action -->
+    <section id="call-to-action-2" class="call-to-action-2 section">
       <div class="container">
-        <div class="panel">
-          <div class="label">Schedule a call</div>
-          <h2 style="margin-top:10px">Let’s build your data foundation together.</h2>
-          <p class="sub" style="margin-bottom:14px">Tell us what you’re trying to achieve — we’ll suggest a path to faster insights, stronger governance, and scalable delivery.</p>
-          <a class="btn primary" href="contact.html">Book a Call</a>
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Schedule a Call</h3>
+              <p class="about-meta">Let’s Build Your Data Foundation Together. Struggling with slow insights, outdated pipelines, or disconnected platforms? Let’s design a solution that scales with your needs and accelerates your business.</p>
+              <a class="cta-btn btn" href="contact.html">Book a Call</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
