@@ -403,8 +403,16 @@ main{padding: 40px 0 60px}
   position:relative;
 }
 .services-home .service-card .icon{
-  font-size:38px;
-  margin-bottom:14px;
+  width:56px;
+  height:56px;
+  margin:0 auto 14px;
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:color-mix(in srgb,#0c67c4,transparent 88%);
+  color:#0c67c4;
+  font-size:24px;
 }
 .services-home .service-card h3{
   font-size:18px;
@@ -418,17 +426,14 @@ main{padding: 40px 0 60px}
 }
 .services-home .service-card:hover{
   transform:translateY(-6px);
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  border-color:#00c8ff;
-  background:#0d83fd;
-}
-.services-home .service-card:hover h3,
-.services-home .service-card:hover p{
-  color:#fff;
+  box-shadow:0 10px 28px rgba(15,23,42,0.10);
+  border-color:#d3e4ff;
+  background:#ffffff;
 }
 .services-home .service-card:hover .icon i,
 .services-home .service-card:hover .icon{
-  color:#fff;
+  background:color-mix(in srgb,#0c67c4,transparent 80%);
+  color:#0c67c4;
 }
 
 /* Features cards (tech/tools) */
