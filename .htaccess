@@ -1,0 +1,15 @@
+DirectoryIndex site/index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # If the request is for the root, serve site/index.html
+  RewriteRule ^$ site/index.html [L]
+
+  # If the requested file or directory does NOT exist at the root...
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  # ...rewrite to the same path under /site
+  RewriteRule ^(.*)$ site/$1 [L]
+</IfModule>
+
